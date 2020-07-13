@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 import request from 'supertest';
 import { app } from '../app';
 
-jest.setTimeout(1000 * 60 * 10);
 declare global {
   namespace NodeJS {
     interface Global {
