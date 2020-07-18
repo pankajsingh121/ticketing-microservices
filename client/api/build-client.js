@@ -5,7 +5,7 @@ export default ({ req }) => {
     // We are on the server
 
     return axios.create({
-      baseURL: 'http://172.18.159.123',
+      baseURL: 'http://192.168.43.101',
       headers: req.headers
     });
   } else {
