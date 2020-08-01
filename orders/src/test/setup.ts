@@ -9,7 +9,7 @@ declare global {
     }
   }
 }
-jest.setTimeout(1000 * 60 * 10);
+
 jest.mock('../nats-wrapper');
 
 let mongo: any;

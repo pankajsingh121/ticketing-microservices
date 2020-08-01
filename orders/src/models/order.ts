@@ -2,7 +2,8 @@ import mongoose from 'mongoose';
 import { OrderStatus } from '@sgticket/common';
 import { TicketDoc } from './ticket';
 
-export {OrderStatus};
+export { OrderStatus };
+
 interface OrderAttrs {
   userId: string;
   status: OrderStatus;
