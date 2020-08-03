@@ -9,12 +9,12 @@ declare global {
     }
   }
 }
-
+jest.setTimeout(1000 * 60 * 10);
 jest.mock('../nats-wrapper');
 
 let mongo: any;
 beforeAll(async () => {
-  process.env.JWT_KEY = 'asdfasdf';
+  process.env.JWT_KEY = 'asdf';
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
   mongo = new MongoMemoryServer();
