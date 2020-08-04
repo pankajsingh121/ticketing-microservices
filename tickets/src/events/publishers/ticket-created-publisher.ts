@@ -1,6 +1,5 @@
-import {Publisher,TicketCreatedEvent,Subjects}  from '@sgticket/common';
-
+import { Publisher, Subjects, TicketCreatedEvent } from '@sgticket/common';
 
 export class TicketCreatedPublisher extends Publisher<TicketCreatedEvent> {
-    subject : Subjects.TicketCreated = Subjects.TicketCreated
+  subject: Subjects.TicketCreated = Subjects.TicketCreated;
 }
