@@ -11,12 +11,14 @@ declare global {
     }
   }
 }
-
+jest.setTimeout(1000 * 60 * 10);
 jest.mock('../nats-wrapper');
+
+process.env.STRIPE_KEY = 'sk_test_51HG2ycIUXMOJZAdn0syHtf9OP8Zm4CNj1Pts2W0dB5oGXK9SyMPsDhDTY8FLHWxS4uRgdf0u2IFlo6pbjTlLirMm00R9X8vkCf';
 
 let mongo: any;
 beforeAll(async () => {
-  process.env.JWT_KEY = 'asdfasdf';
+  process.env.JWT_KEY = 'asdf';
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
   mongo = new MongoMemoryServer();
